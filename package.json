@@ -1,0 +1,35 @@
+{
+  "name": "lab_3",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "parcel static/index.html",
+    "api": "node api/index.js",
+    "api_dev": "nodemon api/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lapatkindi/Lab_3.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lapatkindi/Lab_3/issues"
+  },
+  "homepage": "https://github.com/lapatkindi/Lab_3#readme",
+  "dependencies": {
+    "contentful-management": "^7.19.1",
+    "express": "^4.17.1",
+    "googleapis": "^74.2.0",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-router-dom": "^5.2.0",
+    "regenerator-runtime": "^0.13.7"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7",
+    "parcel-bundler": "^1.12.5"
+  }
+}

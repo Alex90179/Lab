@@ -1,0 +1,118 @@
+body {
+    font-family: Arial, Verdana,  sans-serif; /* Семейство шрифтов */
+    font-size: 11pt; /* Размер основного шрифта в пунктах  */
+    background-color: #f0f0f0; /* Цвет фона веб-страницы */
+    color: #333; /* Цвет основного текста */ 
+  }
+  h1 {
+    color: #a52a2a; /* Цвет заголовка */
+    font-size: 24pt; /* Размер шрифта в пунктах */
+    font-family: Georgia, Times, serif; /* Семейство шрифтов */
+    font-weight: normal; /* Нормальное начертание текста  */
+  }
+  p {
+    text-align: justify; /* Выравнивание по ширине */
+    margin-left: 60px; /* Отступ слева в пикселах */
+    margin-right: 10px; /* Отступ справа в пикселах */
+    border-left: 1px solid #999; /* Параметры линии слева */
+    border-bottom: 1px solid #999; /* Параметры линии снизу */
+    padding-left: 10px; /* Отступ от линии слева до текста  */
+    padding-bottom: 10px; /* Отступ от линии снизу до текста  */
+  }
+
+  ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  ul li {
+    list-style-type: none;
+    flex-basis: auto;
+    flex-grow: 1;
+    text-align: center;
+    display: flex;
+    justify-content: center; /*Центрирование по горизонтали*/
+    align-items: center;
+ }
+
+
+  ul li:nth-child(1n) {
+    background: rgb(255, 0, 0); /* Заменить цвет ??? */
+  }
+  ul li:nth-child(2n) {
+    background: rgb(255, 208, 0); /* Заменить цвет ??? */
+  }
+    
+  ul li:nth-child(3n) {
+    background: #ccc; /* Заменить цвет ??? */
+  }
+  
+  ul li a {
+    padding: 20px 0;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    display: block;
+  }
+
+  /* Dropdown Button */
+.dropbtn {
+  background: rgb(255, 208, 0); /*Цвет как у 2 блока установить ???*/
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+
+
+
+
+
+.course {
+  display: flex;
+  align-content: center;
+  padding: 10px; 
+  border: 1px solid #666;
+  
+
+}
+
+
+.block {
+  /*Блоки занятия*/
+}
+
+
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Ссылки внутри dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Смена цвета всплывающих плашек */
+.dropdown-content a:hover {background-color: #ddd;}
+
+/* Показ плашек курсов при наведении */
+.dropdown:hover .dropdown-content {display: block;}
+
+/* Показать dropdown menu (Здесь код Красной команды добавляет этот класс в .dropdown-content когда пользователь жмякает кнопку dropdown) */
+.show {display:block;}
